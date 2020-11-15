@@ -1,0 +1,41 @@
+body{
+   
+    font-family: 'Mandali', sans-serif;
+    margin: 0px 0px;
+  
+}
+.imagens {
+    background: url(../img/papel1.jpg) no-repeat center center fixed;
+    background-size: cover; 
+    background-color: rgba(0,0,0,0.5);
+    
+}
+.fa-user{
+    text-align: center;
+    font-size: 80px;
+    border-radius: 50% solid black;
+    border-width: 5px;
+    color: rgb(1, 1, 51);
+}
+.start{
+    text-align: center;
+    padding: 14.06%;
+    
+}
+.start a{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid #000;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 180px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(128, 123, 123);
+}
+.start a:hover{
+    
+    background-color: rgb(187, 74, 32);
+}

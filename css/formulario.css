@@ -1,0 +1,92 @@
+body{
+    background: url(../img/papel1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;   
+    color: white;    
+}
+#form{
+    padding: 30px;
+    margin-top: 90px;    
+    background-image: linear-gradient(to right top, #a7b2cc, #b1b1b1);
+    align-content: center;
+}
+@media all and (min-width: 350px){
+    #form{
+        padding: 8px;
+        width: 60%
+    }
+}
+h3{
+    text-align: center;
+}
+div{   
+    padding: 4px;
+}
+input, select, #inf{
+    padding: 3px;
+    border: 2px solid rgb(114, 114, 145);
+}
+label{
+    width: 100px;
+    padding-right: 5px;
+}
+a{
+    background-color: lightgray;
+    text-decoration: none;
+    color: black;
+    border: 1.5px solid rgb(114, 114, 145);
+    padding: 2px 2.5px;
+}
+a:hover{
+    text-decoration: underline;
+}
+@media all and (min-width: 350px){
+    input, select, #inf{
+        padding: 2px;
+        width: 80%;
+    }
+    label{
+        font-size: 15px;
+    }
+    a{
+        font-size: 14px;
+    }
+    .idiomas input{
+        width: 5%;
+    }
+    .idiomas label{
+        font-size: 13px;
+    }
+    .exp input{
+        width: 5%;
+    }   
+}
+@media all and (min-width: 600px){
+    .idiomas label{
+        font-size: 15px;
+    }
+    input, select, #inf{
+        width: 70%;
+    }
+    #form{
+        padding: 14px;
+    }
+}
+@media all and (min-width: 850px){
+    input, select, #inf{
+        width: 40%;
+    }
+   #inf{
+       padding-left: 50%;
+   }
+}
+@media all and (min-width:1000px){
+    #form{
+        width: 35%;
+    }
+    #form{
+        padding: 20px;
+    }
+}

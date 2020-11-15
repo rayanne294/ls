@@ -1,0 +1,51 @@
+body{
+    background-image: url(../img/papel3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;   
+    color: white;
+}
+#form{
+    background-color: rgba(3, 3, 107, 0.986);
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    background-image: linear-gradient(to right top, rgb(8, 8, 61), rgb(104, 102, 102));
+}
+h3{
+    text-align: center;
+}
+div{
+    margin-left: 20px;
+    padding: 4px;
+}
+input, select, #inf{
+    padding: 3px;
+    border: 2px solid rgb(114, 114, 145);
+  
+}
+label{
+    width: 100px;
+    padding-right: 5px;
+}
+#email{
+    margin-left: 11px;
+}
+.nivel{
+   padding-left: 75px;
+}
+.enviar{
+    margin-left: 80%;
+}
+a{
+    margin-left:80%;
+    background-color: gray;
+    text-decoration: none;
+    color: black;
+    border: 1.5px solid rgb(20, 20, 20);
+    padding: 2px 2.5px;
+}
