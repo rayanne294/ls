@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(../fonts/Montserrat-Regular.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.ttf) format('truetype');
+  }
+  
+  body {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0px;
+  
+  }
+  
+  /* Header */
+  header {
+    background-image: url(../img/connects.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: transp 2.5s;
+  }
+  @keyframes transp{
+    from{
+      opacity: 0;
+    }
+    to{
+      background-color: #555;
+      opacity: 1;
+    }
+  }
+  header .intro-text{
+    animation: slide 2s;
+  }
+  @keyframes slide{
+    from{
+      transform: translateX(-90px);
+    }
+  
+  }
+  header .intro-text p, header .intro-text h1 {
+    color: #ecece2;
+  }
+  
+  header .intro-text h1 {
+    text-transform: uppercase;
+  }
+  
+  header .intro-text p {
+    font-style: italic;
+  }
+  @media all and (min-width:350px){
+    header .intro-text h1{
+      font-size: 1.5em;
+    }
+    header .intro-text p{
+      font-size: 1em;
+      width: 330px;
+    }
+  }
+  @media all and (min-width:560px){
+    header .intro-text h1{
+      font-size: 2em;
+    }
+    header .intro-text p{
+      font-size: 1.3em;
+      width: 400px;
+    }
+  }
+  @media all and (min-width: 980px){
+    header .intro-text h1 {
+      margin: 0px;
+      font-size: 2.5em;
+    }
+    
+    header .intro-text p {
+      font-size: 1.6em;
+      width: 600px;
+    }
+  }
+  /*Content*/
+  
+  .container{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #c7c7af;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(4, 4, 51);
+  }
+  .container nav a.active {
+    background-color: #e76924;
+    color: #fff;
+    border-radius: 4px;
+  }
+  .container ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+  
+  }
+  .container p{
+    text-align: left;
+    color: white;
+    margin-right: 50rem;
+  }
+  @media all and (min-width: 400px) {
+    .container ul{
+      justify-items: flex-start;
+    }
+  }
+  .section {
+    background-color:rgb(6, 8, 27);
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3,3fr); 
+    grid-auto-rows: 100px; 
+  
+  }
+  .section h1 {
+    font-size: 30px;
+    color: wheat;
+    justify-content: space-between; 
+    align-items: initial; 
+    height: 100px;
+    display: block;
+    grid-column-start: 2; 
+    
+  }
+  .section p {
+    color: beige;
+    display: block;
+    text-align: center;
+    grid-column-start: 2; 
+  
+  }
+  
+  .cover img{
+    border-radius: 50%;
+    width: 150px;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0 , 0, .4);
+    font-size: 50px;
+  }
+  
+  /*About */
+  
+  .about {
+    display: flex;
+    color: #fff;
+    background-color: rgb(6, 8, 27);
+  }
+  .about .content {
+    box-sizing: border-box;
+    width: 50vw;
+    padding: 2rem;
+    display: flex;
+  }
+  .about .content #exp p{
+    width: 50vw;
+  }
+  .about .content #contato div{
+    padding: 7px 4px; 
+    text-align: right;
+  }
+  .about .content #contato{
+    padding-left: 150px;   
+  }
+  .about .content #contato h1{
+    text-align: right;
+  }
+  .about .content #contato #sociais{
+    display: flex;
+    padding-left: 40px;
+  }
+  .about .content #contato #sociais a{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    border: 3px solid #555;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  
+ 
+  /* form */
+  
+  .form{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(90, 89, 92);
+  }
+
+  .menu {
+    display: flex;
+    position: sticky;
+    background: #c7c7af;
+    background-color: rgb(4, 4, 51);
+    
+  }
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    padding: 20px;
+    margin-top: 10PX;
+    height: 35px;
+
+}
+
+
+.menu a:link,a:visited {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: .5rem 1rem;
+    width: 100%;
+   
+}

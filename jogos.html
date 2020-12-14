@@ -10,42 +10,101 @@
     <title>Document</title>
 </head>
 <body>
+<!------------------------------------------------------------------Menu-------------------------------------------------------------------------->
     <nav class= "menu">
         <ul>
-            <li> <a  href = " index.html "> <i  class =" fas fa-home "> </i>Início</a></li>
-            <li> <a  href = " jogos.html "> <i class="fas fa-gamepad"></i>Jogos</a></li>
-            <li> <a  href = " minha conta.html "> <i class="fas fa-user-circle"></i>Minha conta</a></li>
-            <p id="conta"> <a href="site/login.html"></a> </p>
+            <li> <a  href = "jogos.html"> <i  class =" fas fa-home "> </i>Início</a></li>
+            <li> <a  href = " #titulo "> <i class="fas fa-gamepad"></i>Jogos</a></li>
+            <li> <a  href = "site/conta.html"> <i class="fas fa-user-circle"></i>Minha conta</a></li>
             <li> <a  href = " meu carrinho.html "> <i  class = "fas fa-shopping-cart"></i>Meu carrinho</a></li>
         </ul>
     </nav>
 
+    <div class="pef">
 
-    <div id="titulo">
-        <h1> Catalogos de Jogos </h1>
-         <p>Lançamentos</p>
     </div>
+<!--------------------------------------------------------------Informações------------------------------------------------------------------------------->
+ <section class="info-content">
+    <section class="seguro">
+        <ul>
+                <li>
+                     <a  href = "jogos.html">  <i class="fas fa-user-shield">  </i> Seguro</a>
+                </li>
+                <p> Garatimos sigilo total aos seus dados </p> 
+        </ul>
+    </section>
+
+    <section class="promocao">
+        <ul>
+            <li> <a  href = "#"> <i class="fas fa-comments-dollar">  </i>Promoções</a>
+                </li>
+            <p> Os melhores valores e promoções</p>
+        </ul>
+    </section>
+
+    <section class="rapido">
+        <ul>
+            <li> 
+                <a  href = "#"> <i class="fas fa-car-side">  </i> Entrega Rapido</a>
+            </li>
+                <p> Entrega rapida e segura</p> 
+        </ul>
+    </section>
+</section>
+
+<!--------------------------------------------------------Opções de pesquisa---------------------------------------------------------------->
+        <div id="titulo">
+                <h1> Catálogos de Jogos </h1>
+                 <p>Lançamentos</p>
+            </div>
+        </div>
+            <div id="busca">
+                <input type="text" id="txtBusca" placeholder="O que você esta buscando ? "/>
+                <label for="place">Plataformas:  </label>
+                <select name="place" id="place">
+                <option value="Todos">Todos</option>
+                <option value="PS4">PS4</option>
+                <option value="PS5">PS5</option>
+                <option value="Xbox One">Xbox One</option>
+                <option value="Xbox 360">Xbox 360</option>
+            </select>
+            </div>
+        </div>
+<!----------------------------------------------------------------Opções de jogos-------------------------------------------------------->
+
 <main>
-
-    <div id="busca">
-        <input type="text" id="txtBusca" placeholder="Buscar..."/>
-        <label for="place">Plataformas: </label>
-        <select name="place" id="place">
-        <option value="Todos">Todos</option>
-        <option value="PS4">PS4</option>
-        <option value="PS5">PS5</option>
-        <option value="Xbox One">Xbox One</option>
-        <option value="Xbox 360">Xbox 360</option>
-    </select>
+    <div id="game">
     </div>
-
-     
-        
-        <div id="game">
-<div>
 <script src="js/java.js"></script>
 <script src="js/jogos.js"></script>
-
 </main>
 </body>
+
+<!--------------------------------------------------------------------Rodapé----------------------------------------------------------------------------->
+<footer>
+    <section class="footer-content">
+        <section class="address">
+            <h1>LOCAlIZAÇÃO </h1>
+            <p>Expedicionarios, 3481 </p>
+        </section>
+         <section class="social">
+            <h1>Redes Sociais</h1>
+         <ul>
+           <li>
+             <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+           </li>
+            <li>
+              <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" class="google-plus"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            </ul>
+        </section>
+         <section class="social">
+            <h1>ABOUT FREELANCER</h1>
+            <p>Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</p>
+        </section>
+    </section>
+</footer>
 </html>
